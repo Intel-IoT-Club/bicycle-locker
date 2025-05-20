@@ -12,8 +12,9 @@ import {
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import MapView, { PROVIDER_GOOGLE, Marker } from 'react-native-maps';
 import { useRouter } from 'expo-router';
+import Wallet from './components/Wallet';
 
-const GOOGLE_API_KEY = 'AIzaSyD6SK-6_GeCudV4zHogeWxjVmYiWOmCAqo'; // Replace with your real key
+const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
 
 export default function HomeScreen() {
   const [boarding, setBoarding] = useState(null);
@@ -72,6 +73,9 @@ export default function HomeScreen() {
         style={styles.overlay}
       >
         <Text style={styles.heading}>Find Your Ride</Text>
+        <View style={{ marginVertical: 10 }}>
+          <Wallet />
+        </View>
 
         <GooglePlacesAutocomplete
           placeholder="Boarding Point"
