@@ -64,5 +64,16 @@
     "tailwindcss": "^3.3.5",
     "typescript": "^5.3.0"
   },
-  "private": true
+  "private": true,
+  "description": "This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Intel-IoT-Club/bicycle-locker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Intel-IoT-Club/bicycle-locker/issues"
+  },
+  "homepage": "https://github.com/Intel-IoT-Club/bicycle-locker#readme"
 }
